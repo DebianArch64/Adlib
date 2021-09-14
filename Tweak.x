@@ -39,6 +39,7 @@ the generation of a class list and an automatic constructor.
         
         UIViewController *rootVC = [[[[UIApplication sharedApplication] windows] firstObject] rootViewController];
         AdView *vc = [[AdView alloc] init];
+	[vc setModalPresentationStyle:UIModalPresentationFullScreen];
         [rootVC presentViewController:vc animated:YES completion:nil];
     });
 }
